@@ -42,6 +42,15 @@ void makeImageFolder() {
     nowImageFolderName = nowImage_buff.toString();
 }
 
+void makeImage() {
+    number_of_image++;
+    image_buff.delete(0, image_buff.length());
+    image_buff.append(nowImageFolderName);
+    image_buff.append(String.format("%03d", number_of_image));
+    image_buff.append(".jpg");
+    save(image_buff.toString());
+}
+
 void setup() {
     size(1280,720);
     frameRate(20);
@@ -56,12 +65,7 @@ void draw() {
 
 void keyPressed() {
     if (key == 's') {
-        number_of_image++;
-        image_buff.delete(0, image_buff.length());
-        image_buff.append(nowImageFolderName);
-        image_buff.append(String.format("%03d", number_of_image));
-        image_buff.append(".jpg");
-        save(image_buff.toString());
+        makeImage();
     }
 }
 
