@@ -34,6 +34,7 @@ void makeImageFolder() {
     date_digit_list.add(2);
     date_digit_list.add(2);
     date_digit_list.add(2);
+
     nowImage_buff.append("image_");
     for (int i = 0; i < date_list.size(); i++) {
         nowImage_buff.append(String.format("%0" + date_digit_list.get(i) + "d", date_list.get(i)));
