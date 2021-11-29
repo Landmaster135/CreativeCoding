@@ -53,10 +53,13 @@ void makeImage() {
 }
 
 void setup() {
+    makeImageFolder();
+
     size(1280,720);
     frameRate(20);
 
-    makeImageFolder();
+    
+
 }
 
 void draw() {
