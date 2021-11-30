@@ -1,3 +1,6 @@
+import java.util.Arrays;
+
+// for my Processing template.
 int number_of_image = 0;
 StringBuilder image_buff    = new StringBuilder();
 StringBuilder nowImage_buff = new StringBuilder();
