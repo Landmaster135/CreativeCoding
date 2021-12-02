@@ -6,6 +6,10 @@ StringBuilder image_buff    = new StringBuilder();
 StringBuilder nowImage_buff = new StringBuilder();
 String nowImageFolderName = "";
 
+// Input only these variables.
+final int canvasWidth  = 1920; // size(1920,1080) recommended in YouTube.
+final int canvasHeight = 1080; // size(1920,1080) recommended in YouTube.
+
 void makeImageFolder() {
     int year = year();
     int month = month();
@@ -55,10 +59,13 @@ void makeImage() {
     save(image_buff.toString());
 }
 
+void settings() {
+    size(canvasWidth, canvasHeight);
+}
+
 void setup() {
     makeImageFolder();
 
-    size(1280,720);
     frameRate(20);
 
     
