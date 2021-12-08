@@ -1,9 +1,13 @@
-int age = 34;
 PImage img;
 
 void setup() {
     size(500, 500);
-    img = loadImage("petal.jpg");
+    try{
+        img = loadImage("v.jpg");
+    }catch(NullPointerException e){ // why don't catch?
+        println("fileNotFound!!");
+        exit();
+    }
     img.resize(500, 500);
 }
 
