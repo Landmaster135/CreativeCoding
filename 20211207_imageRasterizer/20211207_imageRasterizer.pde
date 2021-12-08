@@ -3,7 +3,7 @@ PImage img;
 void setup() {
     size(500, 500);
     try{
-        img = loadImage("v.jpg");
+        img = loadImage("petal.jpg");
     }catch(NullPointerException e){ // why don't catch?
         println("fileNotFound!!");
         exit();
