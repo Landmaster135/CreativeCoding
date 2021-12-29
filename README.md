@@ -1,5 +1,6 @@
 # CreativeCodingCatastrophe
 
+#### This repogitory has memorandum of codes for Processing.
 - - -
 ### Extension of each Service
 
